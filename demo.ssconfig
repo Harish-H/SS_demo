@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<TestModel Version="6.0.9000">
+  <TestCase RecordedUrl="http://goole/" Id="9c03c63e-f0f4-44c6-90ce-cfa8b5d88fe7" RecordedOn="2024-09-25T12:44:12.3368953-04:00" Name="SA01_SA Service Details Document" ExecutionMode="Recorded" PageThinkTimeMode="Constant" ConstantPageThinkTime="10" TransactionThinkTimeMode="Constant" ConstantTransactionThinkTime="10" ThinkTime="0" CookiesToCorrelate="None" MixWeight="1">
+    <Transaction Name="SA01_T01_Open_Home_Page" Goal="15" FailOnError="Yes">
+      <Session Id="1" />
+    </Transaction>
+  </TestCase>
+  <KPICounters>
+    <KPICounter Name="Requests/Sec" />
+    <KPICounter Name="Avg. Response (s)" />
+    <KPICounter Name="KB Received/Sec" />
+    <KPICounter Name="Errors/Sec" />
+    <KPICounter Name="Pending Requests" />
+    <KPICounter Name="Total Transactions/Sec" />
+  </KPICounters>
+  <Agents>
+    <Agent Name="Local" Host="ACBLP013" UserName="" CreateMonitors="Yes" />
+  </Agents>
+  <TestConfigurations>
+    <TestConfiguration TestID="cd468497-67b0-477b-9a7a-efd2c0e28185" CurrentTestCase="9c03c63e-f0f4-44c6-90ce-cfa8b5d88fe7" DataStorageMedium="SQLite" SMTPOptionsText="t+6USCBveyCzyTEjf6yx926SuqatuR0Tl+2mbt0WcFkGkX+vowgRracVxon75DKnQsqj1JENDfkgIo2IeX8CyA==" IsCurrent="true">
+      <MixWeights LoadGenMixWeights="Local:1" TestObjectMixWeights="SA01_SA Service Details Document:1" TestObjectTier="SA01_SA Service Details Document:0" />
+      <Browsers>
+        <Browser Name="Chrome 64.0" MaxHostConnections="6" MaxTotalConnections="6" ReplaceUserAgent="false" UserAgentString="Mozilla/5.0 (Windows NT 6.1; Win64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" />
+      </Browsers>
+      <Networks>
+        <Network Name="Gigabit Ethernet" UploadBandwith="1000000" DownloadBandwith="1000000" />
+      </Networks>
+      <MultiLoadPatterns>
+        <MultiLoadPattern Name="Main" />
+      </MultiLoadPatterns>
+    </TestConfiguration>
+  </TestConfigurations>
+</TestModel>
